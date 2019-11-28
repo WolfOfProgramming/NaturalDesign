@@ -19,21 +19,62 @@
     padding: 0.7em;
 }
 
-.ul {
+.nav__ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-decoration: none;
 }
 
-.ul li {
+.nav__ul li {
     display: inline;
     padding: 1.3em;
 
 }
 
-.ul a {
+.nav__ul a {
     text-decoration: none;
     font-weight: 400;
     font-size: 1.3em;
+}
+
+.carousel {
+    margin: 0 auto;
+    width: 80%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel__tracks-container {
+    position: relative;
+    width: 100%;
+}
+
+.carousel_tracks {
+    list-style: none;
+}
+
+.carousel__slide {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.carousel__dots-nav {
+   display: flex;
+   justify-content: center;
+}
+
+.carousel__dot {
+    background-color: rgba(0, 0, 0, 0.4);
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.carousel__dot--active {
+    background-color: rgba(0, 0, 0, 0.7);
 }
