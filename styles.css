@@ -8,11 +8,21 @@
 }
 
 .main-header {
-    background-color: rgba(0, 10, 30, 0.5);
+    background-color: rgba(0, 130, 200, 0.6);
     padding: 0 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.main-header__title {
+    font-size: 3rem;
+    color: rgba(0, 0, 0, 0.8);
+    margin: 20px
 }
 
 .nav {
@@ -28,14 +38,15 @@
 
 .nav__ul li {
     display: inline;
-    padding: 1.3em;
+    padding: 1.3rem;
 
 }
 
 .nav__ul a {
     text-decoration: none;
     font-weight: 400;
-    font-size: 1.3em;
+    font-size: 1.7rem;
+    color: rgb(255, 255, 255, 0.6);
 }
 
 .carousel {
@@ -104,4 +115,43 @@
 
 .carousel__btn--right {
     right: -8em;
+}
+
+.relatedInformations {
+    display: flex;
+    justify-content: space-around;
+    min-height: 500px;
+    padding: 0 10%;
+}
+
+.relatedInformations__about,
+.relatedInformations__funFacts {
+    height: 70%;
+    width: 40%;
+}
+
+.relatedInformations__about {
+    padding: 10px;
+    background-color: rgba(100, 155, 255, 0.2);
+    box-shadow: 3px 3px 2px 0 rgba(0, 0, 0, 0.7);
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.relatedInformations__funFacts {
+    align-self: flex-end;
+    padding: 10px;
+    background-color: rgba(50, 155, 255, 0.9);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.relatedInformations__about__header,
+.relatedInformations__funFacts__header {
+    font-size: 3rem;
+    text-align: start;
+    letter-spacing: 2px;
+}
+
+.relatedInformations__about__text,
+.relatedInformations_funFacts_text {
+    font-size: 1.3rem;
 }
