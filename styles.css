@@ -42,12 +42,12 @@
     margin: 0 auto;
     width: 80%;
     position: relative;
-    overflow: hidden;
 }
 
 .carousel__tracks-container {
     position: relative;
     width: 100%;
+    overflow: hidden;
 }
 
 .carousel_tracks {
@@ -77,4 +77,31 @@
 
 .carousel__dot--active {
     background-color: rgba(0, 0, 0, 0.7);
+}
+
+.carousel__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 96px;
+    height: 96px;
+    border: 0;
+    border-radius: 50%;
+    z-index: 3;
+    background-color: rgba(0, 0, 200, 0.35);
+    cursor: pointer;
+    transition: 200ms ease-in;
+}
+
+.carousel__btn:hover,
+.carousel__btn:focus {
+    filter: opacity(75%) contrast(125%);
+}
+
+.carousel__btn--left {
+    left: -8em;
+}
+
+.carousel__btn--right {
+    right: -8em;
 }
