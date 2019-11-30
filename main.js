@@ -1,15 +1,15 @@
-const carouselTracks = Array.from(document.querySelectorAll('.carousel__tracks'));
-console.log(carouselTracks);
-carouselTracks.forEach(track => {
-    let firstElement = track.firstElementChild;
-    const elementWidth = firstElement.offsetWidth;
-    let elementCounter = 0;
-    while ( firstElement.nextElementSibling ) {
-        console.log(elementWidth, elementCounter)
-        firstElement.nextElementSibling.style.left = `${elementCounter*elementWidth}px`;
-        firstElement = firstElement.nextElementSibling;
-        elementCounter++;
-    }
-    console.log(3)
-}) 
+const carouselsTracks = document.querySelectorAll('.carousel');
+const currentElement = [0, 0, 0];
 
+carouselsTracks.forEach( ( carousel, index ) => {
+    console.log(carousel)
+    const images = carousel.querySelectorAll('.carousel__slide');
+    carousel.querySelector('.carousel__button--left').addEventListener( 'click', (e) => {
+        const elementWidth = images[0].offsetWidth;
+        currentElement[index] = currentElement[index] - 1;
+        carousel.style.transform = `translateX(${elementWidth*currentElement[index]}px)`;
+    });
+    carousel.querySelector('.carousel__button--right').addEventListener( 'click', (e) => {
+
+    });
+});

@@ -105,23 +105,32 @@ body {
 .carousel {
     width: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .carousel__tracks-container {
     position: relative;
     width: 100%;
-    overflow: hidden;
+    display: flex;
 }
 
-.carousel_tracks {
+/* .carousel_tracks {
     list-style: none;
     width: 100%;
 }
 
 .carousel__slide {
+    display: block;
     position: absolute;
     left: 0;
     top: 0;
+    width: 100%;
+} */
+
+.carousel__slide {
+    object-fit: cover;
+    width: 100%;
+    flex-shrink: 0;
 }
 
 .carousel__dots-nav {
@@ -206,7 +215,7 @@ body {
 }
 
 .relatedInformations__about__text,
-.relatedInformations_funFacts_text {
+.relatedInformations__funFacts__text {
     font-size: 1.5rem;
     line-height: 1.3;
 }
