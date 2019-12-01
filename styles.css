@@ -56,9 +56,10 @@ body {
 
 .aboutSection {
     display: flex;
-    padding: 20px 10%;
+    padding: 5% 10%;
     justify-content: space-between;
-    height: 1000px; 
+
+    /* height: 1000px;  */
     /* Delete height after */
 }
 
@@ -71,15 +72,15 @@ body {
 
 .plansForTheFuture {
     align-self: flex-end;
-    margin-bottom: 30px;
     background-color: #fdcb6e;
     color: #487eb0;
+    margin-bottom: 10%;
 }
 
 .aboutProject {
     background-color: #00b894;
-    margin-top: 30px;
     color: #DDDDDD ;
+    margin-top: 10%;
 }
 
 .aboutProject__header,
@@ -112,6 +113,7 @@ body {
     position: relative;
     width: 100%;
     display: flex;
+    transition: 800ms ease-in;
 }
 
 /* .carousel_tracks {
@@ -169,7 +171,7 @@ body {
 
 .carousel__btn:hover,
 .carousel__btn:focus {
-    filter: opacity(275%) contrast(155%);
+    filter: opacity(75%) contrast(255%);
 }
 
 .carousel__btn--left {
